@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS location;
+CREATE TABLE location (
+  id INT GENERATED ALWAYS AS IDENTITY,
+  company_code VARCHAR(255),
+  name VARCHAR(255) NOT NULL,
+  city VARCHAR(255) NOT NULL,
+  PRIMARY KEY(id)
+);

@@ -1,0 +1,10 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/api/user/1000"
+  },
+  "response": {
+    "status": 404,
+    "body": "Not Found"
+  }
+}
