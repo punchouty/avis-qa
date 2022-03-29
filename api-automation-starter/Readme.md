@@ -1,9 +1,4 @@
-## Development Environment
-```
-docker compose up
 
-docker compose down
-```
 ## Wiremock
 
 ### Run using docker

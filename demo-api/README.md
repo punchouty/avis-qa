@@ -1,8 +1,22 @@
-## Start Postgres
+## Development Environment
 ```
-cd sample-api
+cd demo-api
 docker compose up
+
+docker compose down
 ```
+### Test Api
+CRUD for below
+
+http://localhost:9000/locations
+
+
+
+### Mocked API
+1. http://localhost:8080/html/example.html
+2. http://localhost:8080/json/data.json
+3. http://localhost:8080/fact
+
 ## PGAdmin
 * **URL :** http://localhost:5050/
 * **User :** admin@admin.com
@@ -18,7 +32,7 @@ docker compose up
 ### Build Image
 ```
 docker image rm demo-api:0.1
-docker build -t demo-api:0.1 .
+docker build -t sample-api:0.1 .
 ```
 
 ### Run Service

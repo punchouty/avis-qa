@@ -1,6 +1,7 @@
 package com.avis.qa.demo.controller;
 
 import com.avis.qa.demo.domain.Quote;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -8,6 +9,8 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class QuoteController {
 
+    @Value(value = "${application.external.api}")
+    private String externalUrl;
     private final RestTemplate restTemplate;
 
     public QuoteController(RestTemplate restTemplate) {
@@ -16,7 +19,6 @@ public class QuoteController {
 
     @GetMapping("/quote")
     public Quote getQuote() {
-        return restTemplate.getForObject(
-                "https://quoters.apps.pcfone.io/api/random", Quote.class);
+        return restTemplate.getForObject(externalUrl, Quote.class);
     }
 }
