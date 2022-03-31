@@ -3,7 +3,10 @@
 <suite name="SampleSuite" verbose="1" >
     <test name="simple" >
         <classes>
-            <class name="com.avis.qa.api.SampleApiTest" />
+            <class name="com.avis.qa.api.DatabaseTest" />
+            <class name="com.avis.qa.api.WireMockTest" />
+            <class name="com.avis.qa.api.ComponentTest" />
+            <class name="com.avis.qa.api.EndToEndTest" />
         </classes>
     </test>
 </suite>

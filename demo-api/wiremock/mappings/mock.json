@@ -5,6 +5,6 @@
   },
   "response": {
     "status": 200,
-    "body": "hello"
+    "body": "{'data': 'Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.', 'length':23}"
   }
 }

@@ -5,9 +5,11 @@ import lombok.Data;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
-public class Quote {
+public class User {
 
-  private String fact;
-  private int length;
+  private long id;
+  private String firstName;
+  private String lastName;
+  private int email;
 
 }

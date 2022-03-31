@@ -1,0 +1,10 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/users/2"
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"data\": { \"id\":2, \"email\":\"rajan.punchouty@avis.com\", \"first_name\":\"Rajan\", \"last_name\":\"Punchouty\"}}"
+  }
+}

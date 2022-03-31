@@ -32,11 +32,27 @@ http://localhost:9000/locations
 ### Build Image
 ```
 docker image rm demo-api:0.1
-docker build -t sample-api:0.1 .
+docker build -t demo-api:0.1 .
 ```
 
 ### Run Service
 ```
 docker run -e DB_URL=jdbc:postgresql://postgres:5432/postgres -e DB_USER=postgres -e DB_PASSWORD=password -p 8080:8080 --network=avis_network_test -it demo-api:0.1
 ```
+
+Ecomm Service
+US/Canda/Australia
+
+Direct Connect - Kartik
+Expedia/Cosco
+
+XVR - AVR/BVR - 
+
+Avis Budget - North America, Canda, Austra
+
+CMS Application - web site
+
+Websites/Mobile
+
+
 
