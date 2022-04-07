@@ -19,9 +19,9 @@ public class TestConfig {
     public static String dbPassword="$ql$!!1";
 
     //MYSQL DATABASE DETAILS
-    public static String mysqldriver="com.mysql.cj.jdbc.Driver";
-    public static String mysqluserName = "root";
-    public static String mysqlpassword = "selenium";
-    public static String mysqlurl = "jdbc:mysql://localhost:3306/batchoct2021";
+    public static String databaseDriver="com.mysql.cj.jdbc.Driver";
+    public static String databaseUserName = "root";
+    public static String databasePassword = "selenium";
+    public static String jdbcUrl = "jdbc:mysql://localhost:3306/batchoct2021";
 
 }

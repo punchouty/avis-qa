@@ -30,11 +30,11 @@ public class DbManager {
 
     }
 
-    public static void setMysqlDbConnection() throws SQLException, ClassNotFoundException {
+    public static void initDb() throws SQLException, ClassNotFoundException {
         try {
 
-            Class.forName(TestConfig.mysqldriver);
-            conn = DriverManager.getConnection(TestConfig.mysqlurl, TestConfig.mysqluserName, TestConfig.mysqlpassword);
+            Class.forName(TestConfig.databaseDriver);
+            conn = DriverManager.getConnection(TestConfig.jdbcUrl, TestConfig.databaseUserName, TestConfig.databasePassword);
             if (!conn.isClosed())
                 System.out.println("Successfully connected to MySQL server");
 
