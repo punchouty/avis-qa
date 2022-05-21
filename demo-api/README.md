@@ -5,13 +5,6 @@ docker compose up
 
 docker compose down
 ```
-### Test Api
-CRUD for below
-
-http://localhost:9000/locations
-
-
-
 ### Mocked API
 1. http://localhost:8080/html/example.html
 2. http://localhost:8080/json/data.json
@@ -40,6 +33,10 @@ docker build -t demo-api:0.1 .
 ```
 docker run -e DB_URL=jdbc:postgresql://postgres:5432/postgres -e DB_USER=postgres -e DB_PASSWORD=password -p 9000:9000 --network=avis_network_test -it demo-api:0.1
 ```
+### Test Api
+CRUD for below
+
+http://localhost:9000/locations
 
 Ecomm Service
 US/Canda/Australia
